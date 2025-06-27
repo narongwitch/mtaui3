@@ -25,7 +25,7 @@
   "test": "echo \"Skipping test in production\" && exit 0"
 },
 "engines": {
-  "node": ">=18 <19"
+  "node": "20.x"
 },
   "eslintConfig": {
     "extends": [
