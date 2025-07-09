@@ -9,6 +9,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import LineLoginPage from "./LineLoginPage";
 import MainSr from "./MainSr";
 import SearchSr from "./SearchSr";
+import MyMapComponent from "./MyMapComponent";
+import UserLocationMap from "./UserLocationMap";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/login" element={<LineLoginPage />} />
           <Route path="/mainsr" element={<MainSr />} />
           <Route path="/searchsr" element={<SearchSr />} />
+          <Route path="/map" element={<MyMapComponent />} />
+          <Route path="/mylocation" element={<UserLocationMap />} />
           
         </Routes>
       </Container>

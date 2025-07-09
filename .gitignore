@@ -137,3 +137,6 @@ dist
 
 # build
 .build/
+
+# key
+*.key
