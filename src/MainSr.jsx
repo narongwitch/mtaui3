@@ -121,6 +121,41 @@ const MainServiceReport = () => {
           <Box display="flex" gap={2}>
             <TextField
               fullWidth
+              label="เบอร์โทรศัพท์"
+              name="telephone"
+              required
+              margin="normal"
+            />
+            <TextField
+              fullWidth
+              label="แผนก"
+              name="department"
+              required
+              margin="normal"
+            />
+          </Box>
+
+          <Box display="flex" gap={2}>
+            <TextField
+              fullWidth
+              label="ชั้น"
+              name="floor"
+              required
+              margin="normal"
+            />
+            <TextField
+              fullWidth
+              label="โซน"
+              name="zone"
+              required
+              margin="normal"
+            />
+          </Box>
+
+
+          <Box display="flex" gap={2}>
+            <TextField
+              fullWidth
               label="Engineer"
               name="engineer"
               required
@@ -130,9 +165,10 @@ const MainServiceReport = () => {
               <InputLabel>Service Type</InputLabel>
               <Select name="service_type" label="Service Type" required>
                 <MenuItem value="">Select service type</MenuItem>
-                <MenuItem value="ติดตั้งใหม่">ติดตั้งใหม่</MenuItem>
-                <MenuItem value="ซ่อม">ซ่อม</MenuItem>
-                <MenuItem value="บริการ">บริการ</MenuItem>
+                <MenuItem value="SERVICE">Service</MenuItem>
+                <MenuItem value="INSTALL">Install</MenuItem>
+                <MenuItem value="EMERGENCY">Emergency</MenuItem>
+                <MenuItem value="PM">PM</MenuItem>
               </Select>
             </FormControl>
           </Box>
