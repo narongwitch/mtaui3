@@ -4,34 +4,30 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 
-
-
-import LineLoginPage from "./LineLoginPage";
-import MainSr from "./MainSr";
-import SearchSr from "./SearchSr";
+import LineLoginPage from './LineLoginPage';
+import MainSr from './MainSr';
+import SearchSr from './SearchSr';
+import AdminCrud from './AdminCrud';
 
 function App() {
   return (
     <Router>
-      <Container component="main" maxWidth="sm">
+      <Container component="main" maxWidth="lg">
         <CssBaseline />
-        <Typography variant="h3" align="center">
+        <Typography variant="h5" align="center" sx={{ my: 2 }}>
+          MTA Service Report System
         </Typography>
 
-
-
-        
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<LineLoginPage />} />
           <Route path="/mainsr" element={<MainSr />} />
           <Route path="/searchsr" element={<SearchSr />} />
-          
+          <Route path="/admin" element={<AdminCrud />} />
         </Routes>
       </Container>
     </Router>
   );
 }
-
 
 export default App;
